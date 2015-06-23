@@ -20,6 +20,9 @@
      python
      fortran
      clojure
+     cider
+     julia
+     ess
      auto-completion
      better-defaults
      (git :variables
