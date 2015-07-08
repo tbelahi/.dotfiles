@@ -20,6 +20,7 @@
      python
      fortran
      clojure
+     cider
      auto-completion
      better-defaults
      (git :variables
@@ -27,6 +28,7 @@
      markdown
      org
      syntax-checking
+     tramp
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
