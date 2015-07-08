@@ -16,14 +16,15 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     auctex
+     latex
      python
      fortran
      clojure
      cider
-     julia
      ess
      auto-completion
+     scala
+     rust
      better-defaults
      (git :variables
           git-gutter-use-fringe t)
