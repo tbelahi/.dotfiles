@@ -21,7 +21,7 @@
      fortran
      clojure
      cider
-     ess
+     extra-langs
      auto-completion
      scala
      rust
