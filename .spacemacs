@@ -16,11 +16,12 @@
      ;; Example of useful layers you may want to use right away
      ;; Uncomment a layer name and press C-c C-c to install it
      ;; --------------------------------------------------------
-     latex
+     (latex :variables
+            latex-enable-auto-fill t
+            latex-enable-folding t)
      python
      fortran
      clojure
-     cider
      extra-langs
      auto-completion
      scala
@@ -29,7 +30,8 @@
      (git :variables
           git-gutter-use-fringe t)
      markdown
-     org
+     (org :variables
+          org-enable-github-support t)
      syntax-checking
      tramp
      )
@@ -67,7 +69,8 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light
+   dotspacemacs-themes '(spacemacs-dark
+                         solarized-light
                          solarized-dark
                          leuven
                          monokai
@@ -76,8 +79,8 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Source Code Pro for Powerline"
+                               :size 15
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -148,6 +151,7 @@ before layers configuration."
                                "groupMeeting.org"))
 
   )
+  (setq fill-column 80)
 
 (defun dotspacemacs/config ()
   "Configuration function.
