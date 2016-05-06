@@ -20,16 +20,15 @@
      python
      fortran
      clojure
-     cider
      extra-langs
      auto-completion
      scala
      rust
-     better-defaults
      (git :variables
           git-gutter-use-fringe t)
      markdown
-     org
+     (org :variables
+          org-enable-github-support t)
      syntax-checking
      tramp
      )
@@ -67,7 +66,12 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light
+   dotspacemacs-themes '(spacemacs-dark
+                         solarized-light
+                         granger
+                         bubbleberry
+                         subatomic
+                         odersky
                          solarized-dark
                          leuven
                          monokai
@@ -76,8 +80,8 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Source Code Pro for Powerline"
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -112,6 +116,7 @@ before layers configuration."
    ;; Use to disable fullscreen animations in OSX."
    dotspacemacs-fullscreen-use-non-native nil
    ;; If non nil the frame is maximized when Emacs starts up.
+   A
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (Emacs 24.4+ only)
    dotspacemacs-maximized-at-startup nil
@@ -143,9 +148,9 @@ before layers configuration."
    )
   ;; User initialization goes here
   ; Org Mode
-  (setq org-agenda-files (list "~/Dropbox/Org/OrgTutorial.org"
-                               "firtEntrry.org"
-                               "groupMeeting.org"))
+  (setq org-agenda-files ())
+
+  (setq mac-right-option-modifier 'nil)
 
   )
 
@@ -169,13 +174,12 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
- '(org-agenda-files
-   (quote
-    ("~/Dropbox/Org/OrgTutorial.org" "groupMeeting.org")))
+ '(org-agenda-files (quote ("~/Documents/org/agenda.org")))
  '(ring-bell-function (quote ignore) t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
