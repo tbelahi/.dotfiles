@@ -71,13 +71,10 @@ before layers configuration."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(spacemacs-dark
                          solarized-light
-<<<<<<< HEAD
                          granger
                          bubbleberry
                          subatomic
                          odersky
-=======
->>>>>>> a48baf9bd346cbf1a2dabc4438b5eee42d6c61e3
                          solarized-dark
                          leuven
                          monokai
@@ -87,11 +84,7 @@ before layers configuration."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro for Powerline"
-<<<<<<< HEAD
-                               :size 14
-=======
                                :size 15
->>>>>>> a48baf9bd346cbf1a2dabc4438b5eee42d6c61e3
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
