@@ -92,7 +92,7 @@
 
     ;; rust racer configuration
     ["racer.racerBinPath" "/Users/thomas/.cargo/bin"]
-    ["racer.RustSrcPath" "/Users/thomas/Documents/code/rust/rustc-1.8.0"]
+    ["racer.RustSrcPath" "/Users/thomas/rustc-1.8.0/src"]
   ]
 
   ;; Don't like a keybinding or want to add something yourself? Do it here
