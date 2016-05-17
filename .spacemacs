@@ -19,6 +19,7 @@
      (latex :variables
             latex-enable-auto-fill t
             latex-enable-folding t)
+     c-c++
      python
      fortran
      clojure
