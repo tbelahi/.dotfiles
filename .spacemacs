@@ -53,6 +53,7 @@ values."
      auto-completion
      scala
      rust
+     ess
      (git :variables
           git-gutter-use-fringe t)
      (markdown :variables
@@ -339,3 +340,4 @@ you should place your code here."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+j
